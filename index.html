@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANVAYA - Beyond Gifting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" onclick="showPage('home')">ANVAYA</div>
+
+            <div class="nav-links">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="shop.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Shop</span>
+                </a>
+
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Wishlist</span>
+                    <small id="wish-count"></small>
+                </a>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                    <small id="cart-count"></small>
+                </a>
+            </div>
+
+            <div class="nav-icons">
+                <div class="menu-toggle" onclick="toggleMobileMenu()">☰</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" onclick="showPage('home'); toggleMobileMenu()">Home</a>
+            <a href="#" onclick="showPage('shop'); toggleMobileMenu()">Shop</a>
+            <a href="#" onclick="showPage('cart'); toggleMobileMenu()">Cart</a>
+            <a href="#" onclick="showPage('wishlist'); toggleMobileMenu()">Wishlist</a>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <div>
+                <h1>Thoughtful Gifts, Timeless Moments</h1>
+                <p>Curated with love for every special occasion</p>
+                <button class="btn-primary" onclick="showPage('shop')">Explore Gifts</button>
+            </div>
+        </div>
+
+        <div class="aim-wrapper">
+            <div class="aim-text">
+                <h2>Our Aim</h2>
+
+                <p>
+                    At <strong>ANVAYA</strong>, we believe gifting is more than an exchange —
+                    it is an emotion, a memory, and a story waiting to be told.
+                </p>
+
+                <p>
+                    Our aim is to curate thoughtful gift experiences that celebrate
+                    relationships, milestones, and moments with elegance, intention,
+                    and personal meaning.
+                </p>
+
+                <p class="aim-quote">
+                    “We don’t just gift products — we gift emotions.”
+                </p>
+            </div>
+
+            <div class="aim-image">
+                <img src="products/packing2.jpeg" alt="Thoughtful gifting by ANVAYA">
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="section-title">Shop By Category</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="showPage('shop')">
+                <img src="products/gifts&hampers.jpeg" alt="Wellness">
+                <div class="category-overlay">
+                    <h3>Gifts & Hampers</h3>
+                </div>
+            </div>
+            <div class="category-card" onclick="showPage('shop')">
+                <img src="products/earringpage.jpeg" Gourmet">
+                <div class="category-overlay">
+                    <h3>Earring & Pendents</h3>
+                </div>
+            </div>
+            <div class="category-card" onclick="showPage('shop')">
+                <img src="products/pinkbow.jpeg" alt="Stationery">
+                <div class="category-overlay">
+                    <h3>Hair Accessories</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Company -->
+            <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Contact Information</a></li>
+                </ul>
+            </div>
+
+            <!-- Address -->
+            <div class="footer-col">
+                <h4>ADDRESS</h4>
+                <p>
+                    ANVAYA Gifting<br>
+                    188, Near Om shanti<br>
+                    Garhi Harsaru (Gurugram) Haryana , India <br>
+                    Pincode - 122505 <br>
+                    📞 +91 9812482144<br>
+                    ✉️ anvayagifting@gmail.com
+                </p>
+            </div>
+
+            <!-- Socials -->
+            <div class="footer-col">
+                <h4>SOCIALS</h4>
+                <ul class="social-links">
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ANVAYA. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
