@@ -95,23 +95,53 @@
     </div>
     <div class="container">
         <h2 class="section-title">Shop By Category</h2>
+
         <div class="category-grid">
-            <div class="category-card" onclick="showPage('shop')">
-                <img src="products/gifts&hampers.jpeg" alt="Wellness">
+            <div class="category-card">
+                <img src="products/gifts&hampers.jpeg" alt="Gifts & Hampers">
+
                 <div class="category-overlay">
                     <h3>Gifts & Hampers</h3>
+                    <div class="action-icons">
+                        <button class="wish-btn" onclick="addToWishlist('Gifts & Hampers', 1500)">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="cart-btn" onclick="addToCart('Gifts & Hampers', 1500)">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="category-card" onclick="showPage('shop')">
-                <img src="products/earringpage.jpeg" Gourmet">
+
+            <div class="category-card">
+                <img src="products/earringpage.jpeg" alt="Earring & Pendents">
+
                 <div class="category-overlay">
                     <h3>Earring & Pendents</h3>
+                    <div class="action-icons">
+                        <button class="wish-btn" onclick="addToWishlist('Earring & Pendents', 800)">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="cart-btn" onclick="addToCart('Earring & Pendents', 800)">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="category-card" onclick="showPage('shop')">
-                <img src="products/pinkbow.jpeg" alt="Stationery">
+
+            <div class="category-card">
+                <img src="products/pinkbow.jpeg" alt="Hair Accessories">
+
                 <div class="category-overlay">
                     <h3>Hair Accessories</h3>
+                    <div class="action-icons">
+                        <button class="wish-btn" onclick="addToWishlist('Hair Accessories', 500)">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="cart-btn" onclick="addToCart('Hair Accessories', 500)">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,6 +192,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
